@@ -31,8 +31,8 @@ public class IdeaGeneratorServlet extends HttpServlet {
 
             Connection dbCon = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/project_idea_db",
-                    "root",
-                    "Sam@2004"   // 🔁 Replace this
+                    "projectuser",
+                    "1234"   // 🔁 Replace this
             );
 
             PreparedStatement ps = dbCon.prepareStatement(

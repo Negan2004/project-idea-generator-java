@@ -82,8 +82,8 @@
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection con = DriverManager.getConnection(
             "jdbc:mysql://localhost:3306/project_idea_db",
-            "root",
-            "Sam@2004"
+            "projectuser",
+            "1234"
         );
 
         Statement st = con.createStatement();

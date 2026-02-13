@@ -14,6 +14,10 @@
 <body class="bg-light">
 
 <div class="container mt-5">
+<a href="<%= request.getContextPath() %>/adminLogout"
+       class="btn btn-danger">
+        Logout
+    </a>
     <h3 class="mb-4">📊 Domain Management</h3>
 
     <a href="addDomain.jsp" class="btn btn-success mb-3">➕ Add Domain</a>
@@ -35,8 +39,8 @@
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection con = DriverManager.getConnection(
             "jdbc:mysql://localhost:3306/project_idea_db",
-            "root",
-            "Sam@2004"
+            "projectuser",
+            "1234"
         );
 
         Statement st = con.createStatement();

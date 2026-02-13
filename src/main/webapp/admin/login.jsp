@@ -11,7 +11,7 @@
 <div class="card p-4 shadow" style="width:350px;">
     <h4 class="text-center mb-3">🔐 Admin Login</h4>
 
-    <form action="../adminLogin" method="post">
+<form action="<%= request.getContextPath() %>/adminLogin" method="post">
         <div class="mb-3">
             <label>Username</label>
             <input type="text" name="username" class="form-control" required>
